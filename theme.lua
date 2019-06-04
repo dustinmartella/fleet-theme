@@ -5,6 +5,7 @@ local layout_icon_dir = icon_dir .. "layout/"
 local titlebar_icon_dir = icon_dir .. "titlebar/"
 local widget_icon_dir = icon_dir .. "widget/"
 local tag_icon_dir = icon_dir .. "tag/"
+local dpi = require("beautiful").xresources.apply_dpi
 
 local theme = {}
 theme.icon_dir                              = icon_dir
@@ -16,7 +17,7 @@ theme.none_normal                           =	titlebar_icon_dir .. "none_normal.
 theme.font                                  = 'Roboto 10'
 theme.wallpaper                             = os.getenv("HOME") .. "/.config/awesome/wallpaper.png"
 theme.icon_theme                            = nil
-theme.thickness                             = 5
+theme.thickness                             = dpi(5)
 theme.bg_widget                             = "#31393E"
 theme.bg_normal                             = "#31393E"
 theme.bg_focus                              = "#31393E"
@@ -29,7 +30,7 @@ theme.fg_urgent                             = "#000000"
 theme.border_normal                         = "#FF7700"
 theme.border_focus                          = "#0099CC"
 theme.border_marked                         = nil
-theme.border_width                          = 1
+theme.border_width                          = dpi(1)
 theme.useless_gap                           = 0
 theme.gap_single_client                     = true
 theme.column_count                          = nil
@@ -42,16 +43,16 @@ theme.cursor_mouse_move                     = nil
 
 --{{{ snap
 theme.snap_bg                               = "#0099CC"
-theme.snap_border_width                     = 10
+theme.snap_border_width                     = dpi(10)
 theme.snap_shape                            = nil
 --}}}
 
 --{{{ menu
 theme.submenu_icon                          = icon_dir .. "submenu.xpm"
-theme.menu_height                           = "32"
-theme.menu_width                            = "200"
+theme.menu_height                           = dpi(32)
+theme.menu_width                            = dpi(200)
 theme.menu_border_color                     = "#FFFFFF"
-theme.menu_border_width                     = "2"
+theme.menu_border_width                     = dpi(2)
 theme.menu_fg_focus                         = "#111111"
 theme.menu_bg_focus                         = "#0099CC"
 theme.menu_fg_normal                        = "#EFEFEF"
@@ -61,7 +62,7 @@ theme.menu_submenu                          = nil
 
 --{{{ systray
 theme.bg_systray                            = "#31393E"
-theme.systray_icon_spacing                  = 4
+theme.systray_icon_spacing                  = dpi(4)
 --}}}
 
 --{{{ taglist
@@ -135,7 +136,7 @@ theme.tasklist_font_minimized               = nil
 theme.tasklist_font_urgent                  = nil
 theme.tasklist_spacing                      = nil
 theme.tasklist_shape                        = nil
-theme.tasklist_shape_border_width           = 1
+theme.tasklist_shape_border_width           = dpi(1)
 theme.tasklist_shape_border_color           = nil
 theme.tasklist_shape_focus                  = nil
 theme.tasklist_shape_border_width_focus     = nil
