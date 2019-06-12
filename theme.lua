@@ -14,7 +14,7 @@ theme.icon_dir                              = icon_dir
 theme.bar                                   = icon_dir .. "bar.xpm"
 theme.none_normal                           =	titlebar_icon_dir .. "none_normal.xpm"
 
-theme.font                                  = 'Roboto 10'
+theme.font                                  = 'Roboto ' .. tostring(dpi(10))
 theme.wallpaper                             = os.getenv("HOME") .. "/.config/awesome/wallpaper.png"
 theme.icon_theme                            = nil
 theme.thickness                             = dpi(5)
