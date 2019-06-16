@@ -67,15 +67,15 @@ theme.systray_icon_spacing                  = dpi(4)
 
 --{{{ taglist
 theme.taglist_fg_focus                      = "#FFFFFF"
-theme.taglist_bg_focus                      = "png:" .. icon_dir .. "taglist_bg_focus.png"
+theme.taglist_bg_focus                      = "png:" .. icon_dir .. "taglist_bg_focus@" .. dpi(1) .. "x.xpm"
 theme.taglist_fg_urgent                     = "#000000"
 theme.taglist_bg_urgent                     = "#FF0000"
 theme.taglist_bg_occupied                   = "transparent"
 theme.taglist_fg_occupied                   = "#FFFFFF"
 theme.taglist_bg_empty                      = "transparent"
 theme.taglist_fg_empty                      = "#FFFFFF"
-theme.taglist_squares_sel                   = icon_dir .. "square_sel.xpm"
-theme.taglist_squares_unsel                 = icon_dir .. "square_unsel.xpm"
+theme.taglist_squares_sel                   = icon_dir .. "square_sel@" .. dpi(1) .. "x.xpm"
+theme.taglist_squares_unsel                 = icon_dir .. "square_unsel@" .. dpi(1) .. "x.xpm"
 theme.taglist_squares_sel_empty             = nil
 theme.taglist_squares_unsel_empty           = nil
 theme.taglist_squares_resize                = false
